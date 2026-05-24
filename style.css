@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    background-image: url(imgs/clm_cosmeticos_logo.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubar{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubar a{
+    color: black;
+    padding: 18px 10px;
+    text-decoration: none;
+}
+
+.menubar a:hover{
+    background-color: gray;
+}
