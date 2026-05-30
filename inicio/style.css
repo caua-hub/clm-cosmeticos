@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    background-color: #e5989b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faede1;
+    padding: 15px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.iconLogo img{
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.menubar{
+    display: flex;
+    gap: 30px;
+}
+
+.menubar a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.menubar a:hover{
+    color: #e5989b;
+}
+
+.iconsPerfil{
+    display: flex;
+    gap: 20px;
+}
+
+.iconsPerfil img{
+    width: 23px;
+    height: auto;
+    cursor: pointer;
+}
+
+.imgPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+}
+
+.ladoEsquerdo, .ladoDireito{
+    flex: 1;
+}
+
+.imgFloat{
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
