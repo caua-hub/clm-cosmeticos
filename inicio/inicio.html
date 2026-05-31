@@ -12,6 +12,8 @@
 </head>
 </head>
 <body>
+    <script src="script.js"></script>
+
     <header class="navbar">
         <div class="iconLogo">
             <img src="/imgs/clm_cosmeticos_logo.jpg" alt="iconLogo">
@@ -47,8 +49,17 @@
             </div>
         </div>
 
-        <div class="ladoDireito">
-            <img src="/imgs/foto-maquiagem.webp" alt="maquiagem" class="imgFloat">
+        <div class="ladoDireito-imgsFloat">
+            <button class="setaCarrossel setaEsquerda" onclick="moverImgsCarrossel(-1)">&#10094;</button>
+            <div class="carrossel">
+                <div class="carrosselImgs" id="track">
+                    <img src="/imgs/foto-maquiagem.webp" alt="maquiagem" class="imgFloat">
+                    <img src="/imgs/baseVelvetSkin.webp" alt="baseVelvetSkin">
+                    <img src="/imgs/blushMarianaSaad.webp" alt="blushMarianaSaad">
+                    <img src="/imgs/glossFramboesa.webp" alt="glossFramboesa">
+                </div>
+            </div> 
+            <button class="setaCarrossel setaDireita" onclick="moverImgsCarrossel(1)">&#10095;</button>
         </div>
     </div>
     
