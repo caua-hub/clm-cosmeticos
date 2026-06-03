@@ -6,18 +6,51 @@
     <title>CLM Cosméticos</title>
     <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
 </head>
 <body>
+    <script src="script.js"></script>
+
     <header class="navbar">
         <div class="iconLogo">
             <img src="/imgs/clm_cosmeticos_logo.jpg" alt="iconLogo">
         </div>
 
         <div class="menubar">
-            <a href="#Inicio">Início</a>
-            <a href="produtos/produtos.html">Produtos</a>
-            <a href="categorias/categorias.html">Categorias</a>
-            <a href="/sobre/index.html">Sobre</a>
+            <div class="dropdown">
+                <a href="">Rosto</a>
+                <div class="dropdownConteudo">
+                    <a>Bases</a>
+                    <a>Pó Compacto</a>
+                    <a>Corretivos</a>
+                    <a>Blush</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="">Olhos</a>
+                <div class="dropdownConteudo">
+                    <a>Sombras</a>
+                    <a>Delineadores</a>
+                    <a>Lápis</a>
+                    <a>Marcador de Cílios</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="">Lábios</a>
+                <div class="dropdownConteudo">
+                    <a>Batons</a>
+                    <a>Gloss Labial</a>
+                    <a>Lápis de Contorno</a>
+                </div>
+            </div>
+
+            <a href="">Acessórios</a>
+            <a href="">Kits</a>
             <a href="contato/contato.html">Contato</a>
         </div>
 
@@ -30,11 +63,30 @@
 
     <div class="imgPrincipal">
         <div class="ladoEsquerdo">
-            <img src="/imgs/foto-maquiagem.webp" alt="maquiagem" class="imgFloat">
+            <span class="badgeNovidade">Lançamento Exclusivo</span>
+            <h1>
+                Realce sua beleza natural todos os dias
+            </h1>
+            <p>
+                Descubra nossa linha exclusiva de cosméticos, pensada para trazer elegância, sofisticação e cuidado para a sua pele.
+            </p>
+            <div class="botoes">
+                <a href="#" class="botaoComprar">Ver Produtos</a>
+                <a href="/sobre/index.html" class="botaoSobreNos">Conheça Nossa História</a>
+            </div>
         </div>
 
-        <div class="ladoDireito">
-
+        <div class="ladoDireito-imgsFloat">
+            <button class="setaCarrossel setaEsquerda" onclick="moverImgsCarrossel(-1)">&#10094;</button>
+            <div class="carrossel">
+                <div class="carrosselImgs" id="track">
+                    <img src="/imgs/foto-maquiagem.webp" alt="maquiagem" class="imgFloat">
+                    <img src="/imgs/baseVelvetSkin.webp" alt="baseVelvetSkin">
+                    <img src="/imgs/blushMarianaSaad.webp" alt="blushMarianaSaad">
+                    <img src="/imgs/glossFramboesa.webp" alt="glossFramboesa">
+                </div>
+            </div> 
+            <button class="setaCarrossel setaDireita" onclick="moverImgsCarrossel(1)">&#10095;</button>
         </div>
     </div>
     
