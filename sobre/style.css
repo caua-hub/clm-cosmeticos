@@ -1,31 +1,7 @@
 body{
     margin: 0;
-    background-image: url(imgs/clm_cosmeticos_logo.jpg);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.menubar{
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.menubar a{
-    color: black;
-    padding: 18px 10px;
-    text-decoration: none;
-}
-
-.menubar a:hover{
-    background-color: gray;
-}
-
-
-/* Reset */
-*{
-    margin: 0;
+    background-image: linear-gradient(135deg, #dea8b1 0%, #f4d3d8 100%);
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
@@ -34,37 +10,35 @@ body{
 #Sobre{
     display: flex;
     align-items: center;
-    gap: 50px;
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
+    gap: 60px;
+    padding: 60px 80px;
+    background: transparent;
 }
 
-/* Imagem */
 #Sobre img{
     width: 55%;
-    border-radius: 20px;
+    border-radius: 15px;
     object-fit: cover;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    animation: float 3s ease-in-out infinite;
 }
 
-/* Área de texto */
 .texto{
     flex: 1;
 }
 
-/* Título */
-.texto h1{
+h1{
+    font-family: 'Playfair Display', serif;
     font-size: 48px;
-    color: #111827;
+    color: #333;
     margin-bottom: 20px;
 }
 
-/* Parágrafo */
 .texto p{
-    font-size: 20px;
-    line-height: 1.7;
-    color: #4b5563;
-    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
 }
 
 /* Estatisticas */
@@ -76,7 +50,8 @@ body{
 
 .stat h2{
     font-size: 40px;
-    color: #ff0080;
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .stat span{
@@ -84,18 +59,42 @@ body{
     color: #555;
 }
 
-/* Botão */
+
+/*
 button{
+    background-color: #333;
+    color: #faede1;
+
+    padding: 15px 30px;
+
     border: none;
-    padding: 15px 35px;
-    background: linear-gradient(to right, #ff0080, #ff3399);
-    color: white;
-    font-size: 18px;
-    border-radius: 40px;
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: bold;
+
     cursor: pointer;
-    transition: 0.3s;
+
+    transition: transform 0.2s ease;
 }
 
 button:hover{
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    background-color: #555;
 }
+    */
+
+
+/* animacao que faz a imagem ir pra cima e pra baixo */
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
