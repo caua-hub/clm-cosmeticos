@@ -1,0 +1,182 @@
+/* Reset básico e tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* Fundo rosa suave inspirado no vídeo 2 */
+    background-color: #fdf5f6; 
+    color: #333;
+}
+
+/* Navbar (Simplificado para manter o contexto) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover, .navbar nav a.active {
+    color: #000;
+    font-weight: 500;
+}
+
+.navbar .icons span {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* ----- Seção de Contato ----- */
+.contact-section {
+    padding: 80px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+/* Coluna de Informações */
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info .tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.contact-info h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item strong {
+    font-weight: 500;
+    color: #222;
+}
+
+.info-item p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* Coluna do Formulário */
+.contact-form {
+    flex: 1;
+    background-color: #fdf5f6; /* Fundo contrastante leve */
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus, 
+.input-group select:focus, 
+.input-group textarea:focus {
+    border-color: #333;
+}
+
+/* Botão no estilo do Vídeo 2 */
+.btn-dark {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px; /* Bordas bem arredondadas como no site atual */
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-dark:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+}
+
+/* Responsividade Básica para telas menores */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 30px;
+    }
+}
