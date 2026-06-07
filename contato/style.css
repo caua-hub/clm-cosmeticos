@@ -17,15 +17,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    background-color: #faede1;
+    padding: 15px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.navbar .logo {
-    font-size: 24px;
-    font-weight: 600;
-    letter-spacing: 2px;
+.iconLogo img{
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 .navbar nav ul {
@@ -37,18 +41,30 @@ body {
 .navbar nav a {
     text-decoration: none;
     color: #555;
-    font-size: 14px;
+    font-size: 16px;
     transition: color 0.3s;
 }
 
 .navbar nav a:hover, .navbar nav a.active {
-    color: #000;
+    color: #e5989b;
     font-weight: 500;
 }
 
-.navbar .icons span {
-    margin-left: 15px;
+.iconsPerfil{
+    display: flex;
+    gap: 20px;
+}
+
+.iconsPerfil img{
+    display: inline-block;
+    width: 23px;
+    height: auto;
     cursor: pointer;
+    transition: background-color 3s ease, transform 0.2s ease;
+}
+
+.iconsPerfil img:hover{
+    transform: translateY(-3px);
 }
 
 /* ----- Seção de Contato ----- */
