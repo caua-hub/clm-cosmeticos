@@ -1,0 +1,230 @@
+*{
+    font-family: "poppins", sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faede1;
+    padding: 15px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+.iconLogo img{
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.menubar{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menubar a{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.menubar a:hover{
+    color: #e5989b;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownConteudo{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.dropdownConteudo a{
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.dropdownConteudo a:hover{
+    background-color: #f4d3d8;
+    color: #000;
+}
+
+.dropdown:hover .dropdownConteudo{
+    display: block;
+}
+
+.iconsPerfil{
+    display: flex;
+    gap: 20px;
+}
+
+.iconsPerfil img{
+    display: inline-block;
+    width: 23px;
+    height: auto;
+    cursor: pointer;
+    transition: background-color 3s ease, transform 0.2s ease;
+}
+
+.iconsPerfil img:hover{
+    transform: translateY(-3px);
+}
+
+.carrinho-container{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carrinho-itens{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carrinho-itens h4{
+    font-size: 17px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.item-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e6cece;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.item-card img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.item-info{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.item-info p{
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.item-card .item-qtd{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item-qtd input{
+    width: 40px;
+    height: 35px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 14px;
+    color: #222;
+}
+
+.item-qtd input::-webkit-outer-spin-button, .item-qtd input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.carrinho-resume{
+    flex: 1;
+    background-color: #e6cece;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 20px;
+}
+
+.carrinho-resume h3{
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+.resumo-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: #666;
+}
+
+.resumo-row-total{
+    font-size: 15px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.btn-finalizar{
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 15px;
+}
+
+.btn-finalizar:hover{
+    background-color: #444;
+}
+
+@media (max-width: 768px){
+    .carrinho-container{
+        flex-direction: column;
+    }
+
+    .item-card{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+}
