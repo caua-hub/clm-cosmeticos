@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <title>Perfil do Usuário</title>
+</head>
+<body>
+    <main class="perfil-section">
+        <div class="perfil-container">
+            <aside class="perfil-sidebar">
+                <div class="perfil-header">
+                    <img src="../imgs/Sample_User_Icon.png" alt="perfil-avatar" class="avatar">
+                    <h3>Olá Cliente</h3>
+                    <p>Bem-Vindo(a) de volta</p>
+                </div>
+                
+                <nav class="perfil-menu">
+                    <a href="#" class="active">Meus Dados</a>
+                    <a href="#">Meus Pedidos</a>
+                    <a href="#">Lista de Desejos</a>
+                    <a href="#" class="botaoSair">Sair da Conta</a>
+                </nav>
+            </aside>
+
+            <section class="perfil-content">
+                <h2>Dados Pessoais</h2>
+                <p class="subtitulo">Atualize suas informações de usuário</p>
+                <form action="#" method="post" class="perfil-form">
+                    <div class="linha-input">
+                        <div class="input-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" value="Seu nome" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="nome">Sobrenome</label>
+                            <input type="text" id="sobrenome" value="Seu sobrenome" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" value="(34) 99999-9999">
+                        </div>
+                    </div>
+                    <div class="linha-input">
+                        <div class="input-group">
+                            <label for="E-mail">Data de Nascimento</label>
+                            <input type="date" id="dataNasc">
+                        </div>
+                        <div class="input-group">
+                            <label>CPF</label>
+                            <input type="text" id="cpf">
+                        </div>
+                    </div>
+                    <div class="linha-input">
+                        <div class="input-group">
+                            <label for="E-mail">E-mail</label>
+                            <input type="email" id="email" value="xxxxx@email.com" readonly>
+                        </div>
+                        <div class="input-group">
+                            <label>Endereço</label>
+                            <input type="text" id="Endereço" value="Rua X, Número X, Bairro X, Cidade X, Estado - XX">
+                        </div>
+                    </div>
+                    <div class="linha-input">
+                        <div class="input-group">
+                            <label>Gênero</label>
+                            <div class="genero-container">
+                                <label class="radio-label">
+                                    <input type="radio" name="genero" value="feminino">
+                                    Feminino
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="genero" value="masculino">
+                                    Masculino
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="genero" value="outro">
+                                    Prefiro não informar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divisor">
+                    <h3>Alterar Senha</h3>
+                    <div class="linha-input">
+                        <div class="input-group">
+                            <label for="senhaAtual">Senha Atual</label>
+                            <input type="password" id="senhaAtual" placeholder="********">
+                        </div>
+                        <div class="input-group">
+                            <label for="novaSenha">Nova Senha</label>
+                            <input type="password" id="novaSenha" placeholder="Nova Senha">
+                        </div>
+                    </div>
+                    <button type="submit" class="botaoDark">Salvar Alterações</button>
+                </form>
+            </section>
+        </div>
+    </main>
+   
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <title>Meus Pedidos</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="iconLogo">
+            <img src="../imgs/clm_cosmeticos_logo.jpg" alt="iconLogo">
+        </div>
+
+        <div class="menubar">
+            <div class="dropdown">
+                <a href="">Rosto</a>
+                <div class="dropdownConteudo">
+                    <a>Bases</a>
+                    <a>Pó Compacto</a>
+                    <a>Corretivos</a>
+                    <a>Blush</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="">Olhos</a>
+                <div class="dropdownConteudo">
+                    <a>Sombras</a>
+                    <a>Delineadores</a>
+                    <a>Lápis</a>
+                    <a>Marcador de Cílios</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="">Lábios</a>
+                <div class="dropdownConteudo">
+                    <a>Batons</a>
+                    <a>Gloss Labial</a>
+                    <a>Lápis de Contorno</a>
+                </div>
+            </div>
+
+            <a href="">Acessórios</a>
+            <a href="">Kits</a>
+            <a href="../contato/contato.html">Contato</a>
+        </div>
+        <div class="iconsPerfil">
+            <a href=""><img src="../imgs/coracao.png"></a>
+            <a href=""><img src="../imgs/Sample_User_Icon.png"></a>
+            <a href=""><img src="../imgs/5087784.png"></a>
+        </div>
+    </header>
+    
+    <div class="carrinho-container">
+        <div class="carrinho-itens">
+            <div class="item-card">
+                <img src="data:image/jpeg;base64,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">
+                <div class="item-info">
+                    <h4>Gloss Labial Kiko Milano</h4>
+                    <p>Lábios</p>
+                </div>
+                <div class="item-qtd">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="item-preco">
+                    <strong>R$ 65,99</strong>
+                </div>
+            </div>
+            <div class="item-card">
+                <img src="data:image/jpeg;base64,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">
+                <div class="item-info">
+                    <h4>Base de Maquiagem Kiko Milano</h4>
+                    <p>Rosto</p>
+                </div>
+                <div class="item-qtd">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="item-preco">
+                    <strong>R$ 239,99</strong>
+                </div>
+            </div>
+
+            <div class="carrinho-resume">
+                <h3>Resumo do Pedido</h3>
+                <div class="resumo-row">
+                    <span>Subtotal</span>
+                    <span>R$ 305,98</span>
+                </div>
+                <div class="resumo-row">
+                    <span>Frete</span>
+                    <span>R$ 15,99</span>
+                </div>
+                <hr>
+                <div class="resumo-row-total">
+                    <strong>Total</strong>
+                    <strong>R$ 321,97</strong>
+                </div>
+                <button class="btn-finalizar">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

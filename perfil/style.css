@@ -1,0 +1,181 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.perfil-section{
+    padding: 60px 5%;
+    display: flex;
+    background-color: #fdf5f6;
+}
+
+.perfil-container{
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.perfil-sidebar{
+    width: 200px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    height: fit-content;
+}
+
+.perfil-header{
+    text-align: center;
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.perfil-header .avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    background-color: #c487b9;
+}
+
+.perfil-header h3{
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.perfil-header p{
+    font-size: 15px;
+    color: #888;
+}
+
+.perfil-menu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.perfil-menu a{
+    text-decoration: none;
+    color: #555;
+    padding: 15px 30px;
+    font-size: 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.perfil-menu a:hover, .perfil-menu a.active{
+    background-color: #e0cadf;
+    color: #725f60;
+    border-left: 3px solid #725f60;
+    font-weight: 500;
+}
+
+.perfil-menu .botaoSair{
+    color: #d9534f;
+    margin-top: 5px;
+}
+
+.perfil-content{
+    flex: 1;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    height: 100%;
+}
+
+.perfil-content h2{
+    font-size: 25px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.perfil-content .subtitulo{
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.perfil-form .linha-input{
+    display: flex;
+    gap: 20px;
+}
+
+.perfil-form .linha-input .input-group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.perfil-form .linha-input .input-group input{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.genero-container{
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.radio-label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #222;
+    cursor: pointer;
+        white-space: nowrap;
+
+}
+
+.radio-label input[type="radio"]{
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+.botaoDark{
+    gap: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    background-color: #333030;
+    color: #999;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.botaoDark:hover{
+    background-color: #3b3939;
+}
+
+.divisor{
+    border: 0;
+    height: 1px;
+    background-color: #eee;
+    margin: 40px 0 20px;
+}
+
+.perfil-form h3{
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+input[readonly]{
+    background-color: #f9f9f9;
+    color: #999;
+    cursor: not-allowed; 
+}
+
+
+
+
+
